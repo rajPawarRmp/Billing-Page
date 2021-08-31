@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="bill.js" defer></script>
+	<title>Udupi Restaurant </title>
+	<style>
+		p {
+			font-size: 40px;
+			color: white;
+			border: 3px solid white;
+		}
+
+		body {
+			margin: auto;
+			text-align: center;
+			background-image: url(udupi.jpg);
+			background-attachment: fixed;
+			background-size: cover;
+
+
+			background-size: cover;
+		}
+
+		h2 {
+			color: rgb(255, 255, 255);
+		}
+
+		div {
+			margin-top: 133px;
+			margin-left: 44px;
+			margin-right: 44px;
+
+			background-color: rgba(0, 0, 0, 0.418);
+			padding: 55px;
+		}
+	</style>
+</head>
+
+<body>
+	<h1 style="background-color: crimson; border-radius: 11px; margin: 33px 44px;">Udupi Restaurant</h1>
+	<nav></nav>
+
+	<div>
+		<h2>Select Items : <select id="sel"></select></h2> <br><br><br><br><br><br><br>
+
+		<h2 for="inp">Enter Quantity : <input type="number" name="" id="inp"></h2> <br><br>
+		<input type="button" value="Add Item" onclick="bill () ;">    
+		<!-- button for displaying bill of selected items -->
+		<p id="display"></p>
+		<!-- discreption display -->
+		<p id="final" style="font-size: 65px ; color: rgb(223, 241, 180); border: 3px dotted black; margin: 22px 77px;">
+		</p>
+		<!-- display for total bill -->
+		<input type="button" value="Clear" onclick="cle () ;">
+		<!-- this button for clearing billl window -->
+		<br><br><br><br><br><br><br>
+	</div>
+</body>
+
+</html>
